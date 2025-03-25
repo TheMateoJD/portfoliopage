@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+@theme {
+    --font-Inter: Inter, sans-serif, Oswald, sans-serif, Oswald, "Apple Color Emoji", "Segoe UI Emoji";
+
+    --spacing: 1rem;
+
+    --color-dark-1: #111111;
+    --color-dark-2: #1A1A1A;
+    --color-dark-3: #1E1E1E;
+    --color-blue-1: #6CACE4;
+    --color-minor-1: #C4C4C4;
+    --color-major-1: #FFFFFF;
+
+}
