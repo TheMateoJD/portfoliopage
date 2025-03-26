@@ -35,8 +35,10 @@ function App() {
 
               <h3 className=" pt-2 font-bold">plan</h3>
               <h3 className=" line-through">make all components</h3>
-              <h3 className="">give proper info to all components from data file objects</h3>
-              <h3 className="">get properly working font</h3>
+              <h3 className=" line-through">get properly working font</h3>
+              <h3 className=" line-through">get all icons, github chain in projects, contact information,  all tech stack icons </h3>
+              <h3 className=" line-through">give proper info to all components from data file objects</h3>
+              <h3 className=""> add microsoft office pack, sony vegas autodesk software to unrelated, add nextjs and firebase react native and typescript to currently learning and plans and clean up categories  </h3>
               <h3 className="">make functionality of everything like navigation, switching tech stack categories, work
                   history/education</h3>
               <h3 className="">add all related links and anchor tags</h3>

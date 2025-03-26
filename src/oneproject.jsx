@@ -1,3 +1,5 @@
+import GitHubIcon from "./assets/githubIcon.svg";
+import LinkIcon from "./assets/linkIcon.svg";
 
 export default function OneProject({png}) {
 
@@ -17,8 +19,8 @@ export default function OneProject({png}) {
                         <h1 className="text-2xl "> Gear Ratio Calculator</h1>
                         {/*links container*/}
                         <div className=" flex flex-row items-center justify-evenly w-4 gap-1 h-3">
-                            <span>G</span>
-                            <span>P</span>
+                            <span><img src={GitHubIcon} alt="MailIcon" className="size-1.25"/></span>
+                            <span><img src={LinkIcon} alt="MailIcon" className="size-1.25"/></span>
                         </div>
                     </div>
                     <h2 className="text-minor-1"> Web application that is related to my hobby.

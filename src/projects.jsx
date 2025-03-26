@@ -1,7 +1,7 @@
 import OneProject from "./oneproject.jsx";
 
-import GearProject from "./assets/gearproject.png"
-import BMWProject from "./assets/CloneBMWpage.png"
+import GearProject from "../public/gearproject.png"
+import BMWProject from "../public/CloneBMWpage.png"
 
 export default function Projects(){
 

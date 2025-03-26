@@ -2,6 +2,7 @@
 import OneJob from "./OneJob.jsx";
 import {useState} from "react";
 import Education from "./Education.jsx";
+import WorkHistory from "./assets/WorkHistory.js";
 
 
 
@@ -9,7 +10,7 @@ import Education from "./Education.jsx";
 export default function WorkEducation() {
 
     const [workEdu, setWorkEdu] = useState(1);
-
+    const data2 = WorkHistory
     return (
 
         <div className="w-67.5 text-major-1">
@@ -25,12 +26,16 @@ export default function WorkEducation() {
             {workEdu === 1 ?
                 // if true (Work history)
                 <div className="flex flex-col py-3 ">
-                    <OneJob/>
-                    <OneJob/>
+                    {data2.map((item, index) => (
+                        <OneJob key={index} data={item} />
+                    ))}
                 </div>
 
                 // If false (education)
                 : <Education/>}
+
+            <p>Education part later will be in different tab after i make functionality </p>
+            <Education/>
 
 
 
