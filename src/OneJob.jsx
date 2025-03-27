@@ -1,7 +1,7 @@
 export default function OneJob({data}){
 
     const data2=data
-    console.log(data2)
+
     return (
         <div className="flex flex-col pb-1 ">
 

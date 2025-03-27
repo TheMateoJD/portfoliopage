@@ -5,7 +5,7 @@ export default function Footer(){
 
     return (
 
-        <div className="w-lvw h-13 bg-dark-2 text-major-1 flex flex-row justify-center">
+        <div className=" h-13 w-full bg-dark-2 text-major-1 flex flex-row justify-center">
             {/*center container*/}
             <div className="w-67.5 h-13 flex flex-row justify-between pb-1">
             {/*    name and credits*/}
@@ -15,13 +15,14 @@ export default function Footer(){
                 </div>
             {/*    navbar*/}
 
-                <div className="flex flex-col   text-minor-1 items-end justify-end ">
+                <div className="flex flex-col   text-minor-1 items-end justify-end  ">
                     <h1 className="text-major-1">Navigation</h1>
-                    <span>Tech Stack</span>
-                    <span>Projects</span>
-                    <span>Work History & Education</span>
-                    <span>About</span>
-                    <span>Contact</span>
+                    <a href="#home"><span className=" transition duration-300 hover:text-major-1" >Home</span></a>
+                    <a href="#techStack"><span className="transition duration-300 hover:text-major-1" >Tech Stack</span></a>
+                    <a href="#projects"><span className="transition duration-300 hover:text-major-1">Projects</span></a>
+                    <a href="#work"><span className="transition duration-300 hover:text-major-1">Work History & Education</span></a>
+                    <a href="#about"><span className="transition duration-300 hover:text-major-1">About</span></a>
+                    <a href="#contact"><span className="transition duration-300 hover:text-major-1">Contact</span></a>
                 </div>
 
 

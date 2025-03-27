@@ -11,13 +11,31 @@ export default function WorkEducation() {
 
     const [workEdu, setWorkEdu] = useState(1);
     const data2 = WorkHistory
+
     return (
 
         <div className="w-67.5 text-major-1">
         {/*    Category container*/}
             <div className="flex flex-row items-center justify-around  border border-dark-2 rounded-lg ">
-                <div className="w-33.75 h-2 flex justify-center items-center rounded-s-lg text-lg text-major-1 bg-dark-3 ">Work History</div>
-                <div className="w-33.75 h-2 flex justify-center items-center rounded-e-lg text-lg text-minor-1 bg-dark-1 ">Education</div>
+
+
+                <div
+                    onClick={() => setWorkEdu(1)}
+                    className={workEdu ?
+                        "w-33.75 h-2 flex justify-center items-center rounded-s-lg text-lg text-major-1 bg-dark-3 hover:cursor-pointer" :
+                        "w-33.75 h-2 flex justify-center items-center rounded-s-lg text-lg bg-dark-1 transition duration-300 hover:bg-dark-2 hover:text-minor-1 hover:cursor-pointer"
+                        }>
+                    Work History
+                </div>
+
+
+                <div
+                    onClick={() => setWorkEdu(0)}
+                    className={!workEdu ?
+                        "w-33.75 h-2 flex justify-center items-center rounded-e-lg text-lg text-major-1 bg-dark-3 hover:cursor-pointer" :
+                        "w-33.75 h-2 flex justify-center items-center rounded-e-lg text-lg bg-dark-1 transition duration-300 hover:bg-dark-2 hover:text-minor-1 hover:cursor-pointer" }>
+                    Education
+                </div>
             </div>
             {/*jobs container*/}
 
@@ -34,11 +52,13 @@ export default function WorkEducation() {
                 // If false (education)
                 : <Education/>}
 
-            <p>Education part later will be in different tab after i make functionality </p>
-            <Education/>
 
 
 
         </div>
     )
 }
+
+
+
+
