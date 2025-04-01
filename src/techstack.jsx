@@ -23,10 +23,10 @@ export default function TechStack() {
 
 
     return (
-        <div className="text-major-1 w-67.5 pb-3 ">
-            <h1 className=" text-lg uppercase pb-2">tech stack</h1>
+        <section className="text-major-1  4k:w-100 1440p:w-80  xl:w-67.5 lg:w-60 md:w-45 sm:w-37 w-20  pb-3 ">
+            <h1 className="4k:text-2xl 1440p:text-xl sm:text-lg uppercase pb-2 font-semibold" >tech stack</h1>
             {/*categories*/}
-            <div className="w-67.5 pb-2 text-lg flex flex-row justify-between ">
+            <div className= "4k:w-100 1440p:w-80  xl:w-67.5 lg:w-60 md:w-45 sm:w-37 w-20 4k:text-2xl 1440p:text-xl  lg:text-lg md:text-sm text-base sm:gap-0 gap-0.5 pb-2 flex sm:flex-row flex-col justify-between ">
                 <div
                     onClick={() => setCat("Frontend")}
                     className=
@@ -58,13 +58,13 @@ export default function TechStack() {
 
 
         {/*    displayed boxes*/}
-           <div className="w-67.5 gap-1 flex flex-row  flex-wrap ">
+           <div className="4k:w-100 1440p:w-80 xl:w-67.5 lg:w-60 md:w-45 sm:w-37 w-20 4k:gap-1 1440p:gap-2 sm:gap-1 gap-0.5 flex flex-row flex-wrap   ">
                {data2.map((item, index) => (
                    <TechBox key={index} data={item} />
                ))}
            </div>
 
-        </div>
+        </section>
 
     )
 }

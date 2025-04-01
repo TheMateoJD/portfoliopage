@@ -66,3 +66,48 @@ make the design responsive
 
 add light/dark mode switch 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+sm 640-767
+md 768-1023
+lg 1024-1279
+xl 1280-1535
+2xl 1536-....
+
+
+
+main column
+
+ sm:text-sm md:text-lg
+
+xl:w-32 lg:w-27 md:w-20 sm:w-17
+
+xl:w-67.5 lg:w-60 md:w-45 sm:w-37 w-25
+xl:w-33.75 lg:w-30 md:w-22.5 sm:w-33.5 w-12.5
+
+xl:w-67.5 lg:w-60 md:w-45 sm:w-37 w-25
+
+45 +3
+
+
+
+
+
+
+4k:w-100 1440p:w-80
+
+4k:text-2xl 1440p:text-xl xl:text-base lg:text-sm md:text-xs
+
+
+4k:w-48 1440p:w-38
