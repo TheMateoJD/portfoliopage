@@ -1,11 +1,12 @@
 import MailIcon from "./assets/mailIcon.svg";
 import LinkedinIcon from "./assets/linkedinicon.svg";
 import GitHubIcon from "./assets/GitHubIcon.svg";
-import PhoneIcon from "./assets/phoneIcon.svg";
+import CvIcon from "./assets/cvIcon.svg";
 
 
-export default function Footer(){
-
+export default function Footer({modal,setModal}) {
+    const toggleModal = () => {
+        setModal(!modal);}
 
     return (
 
@@ -15,10 +16,10 @@ export default function Footer(){
             {/*    name and credits*/}
                 <div className="flex flex-col justify-end ">
                     <div className=" py-1 flex flex-row gap-1 items-center">
-                        <a href="" className="p-0.25 border rounded-sm transition duration-300 hover:scale-103"><img src={MailIcon} alt="MailIcon" className="size-1.25"/></a>
-                        <a href="" className="p-0.25 border rounded-sm transition duration-300 hover:scale-103"><img src={LinkedinIcon} alt="MailIcon" className="size-1.25"/></a>
-                        <a href="" className="p-0.25 border rounded-sm transition duration-300 hover:scale-103"><img src={GitHubIcon} alt="MailIcon" className="size-1.25"/></a>
-                        <a href="" className="p-0.25 border rounded-sm transition duration-300 hover:scale-103"><img src={PhoneIcon} alt="MailIcon" className="size-1.25"/></a>
+                        <div onClick={toggleModal} className="p-0.25 w-2 h-2 flex items-center justify-center border rounded-sm transition duration-300 hover:scale-103"><img src={MailIcon} alt="MailIcon" className="size-1.25"/></div>
+                        <a href="https://www.linkedin.com/in/mateusz-surma%C5%84ski-a9a64b34a/" className="p-0.25 w-2 h-2 flex items-center justify-center border rounded-sm transition duration-300 hover:scale-103"><img src={LinkedinIcon} alt="LinkedInIcon" className="size-1"/></a>
+                        <a href="https://github.com/TheMateoJD" className="p-0.25 w-2 h-2 flex items-center justify-center border rounded-sm transition duration-300 hover:scale-103"><img src={GitHubIcon} alt="GitHubIcon" className="size-1.25"/></a>
+                        <a href="#" className="p-0.25 w-2 h-2 flex items-center justify-center border rounded-sm transition duration-300 hover:scale-103"><img src={CvIcon} alt="CvIcon" className="size-1.25"/></a>
                     </div>
                     <h1 className="text-major-1 text-lg">Mateusz Surmański</h1>
                     <h2 className="text-minor-1">© 2025 | All rights reserved.</h2>

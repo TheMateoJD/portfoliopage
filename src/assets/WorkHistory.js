@@ -7,7 +7,7 @@ const WorkHistory = [
     },
     {
         id: 2,
-        company: "Geodimex Sp Z.O.O",
+        company: "Geodimex sp. z o.o.",
         years: "February 2022 - July 2023 (1 year & 5 months)",
         description: "Experienced Land Surveyor with a strong background in construction site surveying. Skilled in usage of surveying equipment to ensure precise measurements and compliance with design plans. Adept at collaborating with engineers, architects, and construction teams to support efficient project execution." ,
     },

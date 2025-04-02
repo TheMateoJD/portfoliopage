@@ -11,7 +11,7 @@ const ProjectData = [
 
     {
         id: 2,
-        prname: "ThisOrThat",
+        prname: "ThisOrThat - Cat Game",
         imgsrc: "/workinprogress.png",
         description: "This project was created to practice API integration. The app fetches images of cats from a database and displays two side by side. Users select their favorite, and the unselected image is replaced with a new one. This interactive approach makes the experience both engaging and a great way to explore API-driven content updates. ",
         technologies: "JavaScript - CSS3 - API integration",

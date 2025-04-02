@@ -1,5 +1,6 @@
 import GitHubIcon from "./assets/githubIcon.svg";
 import LinkIcon from "./assets/linkIcon.svg";
+import React from "../public/reacticon.svg"
 
 
 export default function OneProject({data,len}) {
@@ -49,9 +50,15 @@ export default function OneProject({data,len}) {
                             <span><img src={LinkIcon} alt="MailIcon" className="size-1.25"/></span>
                         </div>
                     </div>
+
+                    {/*icons*/}
+
+
+                    {/*desc*/}
                     <h2 className="text-minor-1 4k:text-2xl 1440p:text-xl xl:text-base lg:text-sm md:text-xs text-base"> {data.description}</h2>
                 </div>
                 {/*technologies wrapper*/}
+
                 <div className="text-sm text-blue-1">
                     <span className="4k:text-2xl 1440p:text-xl xl:text-base lg:text-sm md:text-xs"> {data.technologies} </span>
 
@@ -61,3 +68,10 @@ export default function OneProject({data,len}) {
     )
 
 }
+
+
+// <div className="flex flex-row gap-0.5 pb-0.5">
+//     <span><img src={React} alt="GitIcon" className="size-2.5"/></span>
+//     <span><img src={TailwindIcon} alt="GitIcon" className="size-2.5"/></span>
+//     <span><img src={FigmaIcon} alt="GitIcon" className="size-2.5"/></span>
+// </div>

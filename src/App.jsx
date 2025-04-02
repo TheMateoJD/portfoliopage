@@ -10,7 +10,7 @@ import Footer from "./Footer.jsx";
 import {useState} from "react";
 
 function App() {
-
+    const [modal, setModal] = useState(false)
     // switch home to my Name
     const [navhome,setNavhome]=useState()
 
@@ -19,7 +19,7 @@ function App() {
       <div  className="flex flex-col items-center justify-around font-Inter font-light  " id="home">
 
           <Navbar navhome={navhome} />
-        <Hero setNavhome={setNavhome} />
+        <Hero setNavhome={setNavhome} modal={modal} setModal={setModal} />
             <hr  className="4k:w-100 1440p:w-80 xl:w-67.5 lg:w-60 md:w-45 sm:w-37 w-20  pb-3 border-breakline-1" id="techStack"/>
         <TechStack />
             <hr className="4k:w-100 1440p:w-80 xl:w-67.5 lg:w-60 md:w-45 sm:w-37 w-20  pb-3 border-breakline-1" id="projects"/>
@@ -29,7 +29,7 @@ function App() {
             <hr className="4k:w-100 1440p:w-80 xl:w-67.5 lg:w-60 md:w-45 sm:w-37 w-20  pb-3 border-breakline-1" id="about"/>
         <About/>
 
-        <Footer />
+        <Footer modal={modal} setModal={setModal} />
 
 
           <div className="4k:w-100 1440p:w-80  xl:w-67.5 lg:w-60 md:w-45 sm:w-37 w-20   text-major-1 bg-dark-3 flex flex-col items-start justify-around " >Test container to control spacing<br />
@@ -41,6 +41,7 @@ function App() {
               <h3 className="">add all related links for projects and anchor tags</h3>
               <h3 className="">Expand and finish projects section</h3>
               <h3 className=""> email component? download cv </h3>
+              <h3> add stroke animation on hover ??</h3>
               <h3 className="">add light/dark mode switch</h3>
               <h3 className="">maybe change language btn later</h3>
 
@@ -55,14 +56,21 @@ function App() {
               <h3 className=" line-through hover:no-underline"> maybe imie i nazwisko zastępuje home</h3>
               <h3 className=" line-through hover:no-underline"> usunac darkmode, rozsunąc nav do prawej position sticky top0 zindex </h3>
               <h3 className=" line-through hover:no-underline"> add length "(69 years & 420 months)" in work section ~ Player </h3>
+              <h3 className=" line-through hover:no-underline"> add download cv icon,,</h3>
+              <h3 className=" line-through hover:no-underline"> resize linkedin icon</h3>
+              <h3 className=" line-through hover:no-underline"> ikonki zamiast nazw w projektach -looks weird but i have comented part </h3>
+              <h3 className=" line-through hover:no-underline"> change buttons in work history - switched entire thing to side by side</h3>
+              <h3 className=" line-through hover:no-underline"> wagi a nie wielkosci czcionki </h3>
               <h3> --------------------------------</h3>
               <h3 className=" pt-2 font-bold"> pomysły matrixa -  zostało jeszcze</h3>
+              <h3 className="line-through hover:no-underline"> email modal component opening functionality </h3>
+              <h3 className=""> email styling and sending functionality</h3>
 
-              <h3> add download cv icon, shorten hero text,</h3>
-              <h3> ikonki zamiast nazw w projektach </h3>
-              <h3> wagi a nie wielkosci czcionki </h3>
-              <h3> zmienic przyciski w work history</h3>
+
               <h3> make icon for navbar on mobile</h3>
+              <h3> shorten hero text</h3>
+
+              <h3> add tooltips on hover?</h3>
               <h3> check accesability, then add missing parts (add accesability part to "about me" in 2nd paragraph and in hero section maybe) </h3>
           </div>
       </div>

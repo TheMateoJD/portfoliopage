@@ -1,4 +1,4 @@
-import {useState} from "react";
+
 
 
 export default function Navbar({navhome}) {
@@ -6,7 +6,7 @@ export default function Navbar({navhome}) {
 
 
   return (
-      <nav className="bg-dark-2 w-full sm:h-6 h-8 flex sm:justify-center items-start sm:p-0 pl-1 sticky top-0 z-10  "  >
+      <nav className="bg-dark-2 w-full sm:h-6 h-8 flex sm:justify-center items-start sm:p-0 pl-1 sticky top-0 z-5  "  >
           <div className="
           4k:w-100 1440p:w-80 xl:w-67.5 lg:w-60 md:w-45 sm:w-37
           sm:text-sm md:text-lg
