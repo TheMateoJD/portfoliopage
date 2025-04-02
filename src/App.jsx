@@ -64,7 +64,8 @@ function App() {
               <h3> --------------------------------</h3>
               <h3 className=" pt-2 font-bold"> pomysły matrixa -  zostało jeszcze</h3>
               <h3 className="line-through hover:no-underline"> email modal component opening functionality </h3>
-              <h3 className=""> email styling and sending functionality</h3>
+              <h3 className="line-through hover:no-underline"> Email component styling and form functionality</h3>
+              <h3 className=""> email sending functionality</h3>
 
 
               <h3> make icon for navbar on mobile</h3>
