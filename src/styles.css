@@ -23,7 +23,27 @@
     --text-big-1: 8rem;
     --text-big-2: 10rem;
 
+    @keyframes show {
+        0% {
+            transform: translateY(25rem);
+        }
+        100% {
+            transform: translateY(0rem);
+        }
 
+    }
+    @keyframes hide {
+        0% {
+            transform: translateY(0rem);
+        }
+        100% {
+            transform: translateY(25rem);
+        }
+
+    }
+
+    --animate-show: show 1s ease-in-out;
+    --animate-hide: hide 3s ease-out;
 
 }
 

@@ -15,7 +15,7 @@ export default function Navbar({navhome}) {
           flex sm:flex-row flex-col justify-between
           sm:items-center items-start
           sm:p-0 py-0.5">
-                <a href="#home">
+                <a href="#home" tabIndex="2" className="flex items-center" >
                     {navhome ? (
                         <span className="text-minor-1 transition duration-300 hover:text-major-1">Home</span>
                     ) : (
@@ -31,10 +31,10 @@ export default function Navbar({navhome}) {
                 <div className="
                 4k:w-60 1440p:w-45 xl:w-35 lg:w-30 md:w-30 sm:w-25
                 flex sm:flex-row flex-col  justify-between ">
-                  <a href="#techStack" ><span className="text-minor-1 transition duration-300 hover:text-major-1">Tech Stack</span></a>
-                  <a href="#projects" ><span className="text-minor-1 transition duration-300 hover:text-major-1">Projects</span></a>
-                  <a href="#work" ><span className="text-minor-1 transition duration-300 hover:text-major-1">Work History & Education</span></a>
-                  <a href="#about" ><span className="text-minor-1 transition duration-300 hover:text-major-1">About</span></a>
+                  <a href="#techStack" tabIndex="3"><span className="text-minor-1 transition duration-300 hover:text-major-1">Tech Stack</span></a>
+                  <a href="#projects" tabIndex="4" ><span className="text-minor-1 transition duration-300 hover:text-major-1">Projects</span></a>
+                  <a href="#work"   tabIndex="5" ><span className="text-minor-1 transition duration-300 hover:text-major-1">Work History & Education</span></a>
+                  <a href="#about" tabIndex="6" ><span className="text-minor-1 transition duration-300 hover:text-major-1">About</span></a>
                   {/*<a href="#contact" ><span className="text-minor-1 transition duration-300 hover:text-major-1">Contact</span></a>*/}
                 </div>
               {/*<span className="material-symbols-outlined text-major-1">light_mode</span>*/}

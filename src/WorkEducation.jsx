@@ -1,6 +1,6 @@
 
 import OneJob from "./OneJob.jsx";
-import {useState} from "react";
+// import {useState} from "react";
 import Education from "./Education.jsx";
 import WorkHistory from "./assets/WorkHistory.js";
 
@@ -16,7 +16,7 @@ export default function WorkEducation() {
 
         <section className="4k:w-100 1440p:w-80 xl:w-67.5 lg:w-60 md:w-45 sm:w-37 w-20 text-major-1">
         {/*    Category container*/}
-            <h2 className="4k:text-2xl 1440p:text-xl sm:text-lg uppercase text-major-1 pb-2 font-semibold">Work History & Education</h2>
+            <h2 tabIndex="90" className="4k:text-2xl 1440p:text-xl sm:text-lg uppercase text-major-1 pb-2 font-semibold">Work History & Education</h2>
             <div className="flex lg:flex-row flex-col items-top justify-between 4k:w-100 1440p:w-80 xl:w-67.5 lg:w-60 md:w-45 sm:w-37 w-25 ">
 
                 <div className="4k:w-48 1440p:w-38 lg:w-32 md:w-45 sm:w-37 w-20">

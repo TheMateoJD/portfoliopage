@@ -5,7 +5,13 @@ import React from "../public/reacticon.svg"
 
 export default function OneProject({data,len}) {
 
+// 33
+        let tabvalue2= 70-data.id*3
+        let tabvalue3= tabvalue2-1
+        let tabvalue4= tabvalue3-1
 
+
+    console.log(tabvalue2,tabvalue3,tabvalue4)
 
 
     function isEven(n) {
@@ -15,13 +21,8 @@ export default function OneProject({data,len}) {
     let idEven = isEven(data.id);
     let lenEven = isEven(len)
 
-
-    // transition duration-300 hover:scale-103
-
-
-
     return (
-        <article className={
+        <article tabIndex={tabvalue4} className={
             lenEven ?
                 (idEven ?
                     "4k:w-100 1440p:w-80 xl:w-67.5 lg:w-60 md:w-45 sm:w-37 w-20 flex justify-between p-1 rounded-lg text-major-1  bg-dark-3 sm:flex-row flex-col transition duration-300 hover:scale-103 "
@@ -45,9 +46,9 @@ export default function OneProject({data,len}) {
                     <div className=" 4k:w-48 1440p:w-38 xl:w-32 lg:w-28 md:w-21 sm:w-17 flex flex-row justify-between items-center ">
                         <h1 className="4k:text-4xl 1440p:text-3xl sm:text-2xl ">{data.prname}</h1>
                         {/*links container*/}
-                        <div className=" flex flex-row items-center justify-evenly w-4 gap-1 h-3">
-                            <span><img src={GitHubIcon} alt="GitIcon" className="size-1.25"/></span>
-                            <span><img src={LinkIcon} alt="MailIcon" className="size-1.25"/></span>
+                        <div className=" flex flex-row items-center justify-evenly w-6  h-3">
+                            <a tabIndex={tabvalue3} href={data.gitlink} target="_blank" className=" p-0.5 border rounded-lg border-dark-3 hover:border-major-1" ><span><img src={GitHubIcon} alt="GitIcon" className="size-1.25"/></span></a>
+                            <a tabIndex={tabvalue2} href={data.viewlink} target="_blank" className=" p-0.5 border rounded-lg border-dark-3 hover:border-major-1" ><span><img src={LinkIcon} alt="MailIcon" className="size-1.25"/></span></a>
                         </div>
                     </div>
 

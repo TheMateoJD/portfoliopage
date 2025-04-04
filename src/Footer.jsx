@@ -16,10 +16,10 @@ export default function Footer({modal,setModal}) {
             {/*    name and credits*/}
                 <div className="flex flex-col justify-end ">
                     <div className=" py-1 flex flex-row gap-1 items-center">
-                        <div onClick={toggleModal} className="p-0.25 w-2 h-2 flex items-center justify-center border rounded-sm transition duration-300 hover:scale-103"><img src={MailIcon} alt="MailIcon" className="size-1.25"/></div>
-                        <a href="https://www.linkedin.com/in/mateusz-surma%C5%84ski-a9a64b34a/" className="p-0.25 w-2 h-2 flex items-center justify-center border rounded-sm transition duration-300 hover:scale-103"><img src={LinkedinIcon} alt="LinkedInIcon" className="size-1"/></a>
-                        <a href="https://github.com/TheMateoJD" className="p-0.25 w-2 h-2 flex items-center justify-center border rounded-sm transition duration-300 hover:scale-103"><img src={GitHubIcon} alt="GitHubIcon" className="size-1.25"/></a>
-                        <a href="#" className="p-0.25 w-2 h-2 flex items-center justify-center border rounded-sm transition duration-300 hover:scale-103"><img src={CvIcon} alt="CvIcon" className="size-1.25"/></a>
+                        <div tabIndex="92" onClick={toggleModal} className="p-0.25 w-2 h-2 flex items-center justify-center border rounded-sm transition duration-300 hover:scale-103"><img src={MailIcon} alt="MailIcon" className="size-1.25"/></div>
+                        <a tabIndex="93" href="https://www.linkedin.com/in/mateusz-surma%C5%84ski-a9a64b34a/" className="p-0.25 w-2 h-2 flex items-center justify-center border rounded-sm transition duration-300 hover:scale-103"><img src={LinkedinIcon} alt="LinkedInIcon" className="size-1"/></a>
+                        <a tabIndex="94" href="https://github.com/TheMateoJD" className="p-0.25 w-2 h-2 flex items-center justify-center border rounded-sm transition duration-300 hover:scale-103"><img src={GitHubIcon} alt="GitHubIcon" className="size-1.25"/></a>
+                        <a tabIndex="95" href="#" className="p-0.25 w-2 h-2 flex items-center justify-center border rounded-sm transition duration-300 hover:scale-103"><img src={CvIcon} alt="CvIcon" className="size-1.25"/></a>
                     </div>
                     <h1 className="text-major-1 text-lg">Mateusz Surmański</h1>
                     <h2 className="text-minor-1">© 2025 | All rights reserved.</h2>
@@ -28,11 +28,11 @@ export default function Footer({modal,setModal}) {
 
                 <div className="flex flex-col   text-minor-1 sm:items-end items-start sm:pb-0 py-1 justify-end  ">
                     <h1 className="text-major-1">Navigation</h1>
-                    <a href="#home"><span className=" transition duration-300 hover:text-major-1" >Home</span></a>
-                    <a href="#techStack"><span className="transition duration-300 hover:text-major-1" >Tech Stack</span></a>
-                    <a href="#projects"><span className="transition duration-300 hover:text-major-1">Projects</span></a>
-                    <a href="#work"><span className="transition duration-300 hover:text-major-1">Work History & Education</span></a>
-                    <a href="#about"><span className="transition duration-300 hover:text-major-1">About</span></a>
+                    <a tabIndex="96" href="#home"><span className=" transition duration-300 hover:text-major-1" >Home</span></a>
+                    <a tabIndex="97" href="#techStack"><span className="transition duration-300 hover:text-major-1" >Tech Stack</span></a>
+                    <a tabIndex="98" href="#projects"><span className="transition duration-300 hover:text-major-1">Projects</span></a>
+                    <a tabIndex="99" href="#work"><span className="transition duration-300 hover:text-major-1">Work History & Education</span></a>
+                    <a tabIndex="100" href="#about"><span className="transition duration-300 hover:text-major-1">About</span></a>
                 </div>
 
 
