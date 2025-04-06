@@ -16,7 +16,7 @@ export default function Footer({modal,setModal}) {
             {/*    name and credits*/}
                 <div className="flex flex-col justify-end ">
                     <div className=" py-1 flex flex-row gap-1 items-center">
-                        <div tabIndex="92" onClick={toggleModal} className="p-0.25 w-2 h-2 flex items-center justify-center border rounded-sm transition duration-300 hover:scale-103"><img src={MailIcon} alt="MailIcon" className="size-1.25"/></div>
+                        <div tabIndex="92" onClick={toggleModal} className="p-0.25 w-2 h-2 cursor-pointer flex items-center justify-center border rounded-sm transition duration-300 hover:scale-103"><img src={MailIcon} alt="MailIcon" className="size-1.25"/></div>
                         <a tabIndex="93" href="https://www.linkedin.com/in/mateusz-surma%C5%84ski-a9a64b34a/" className="p-0.25 w-2 h-2 flex items-center justify-center border rounded-sm transition duration-300 hover:scale-103"><img src={LinkedinIcon} alt="LinkedInIcon" className="size-1"/></a>
                         <a tabIndex="94" href="https://github.com/TheMateoJD" className="p-0.25 w-2 h-2 flex items-center justify-center border rounded-sm transition duration-300 hover:scale-103"><img src={GitHubIcon} alt="GitHubIcon" className="size-1.25"/></a>
                         <a tabIndex="95" href="#" className="p-0.25 w-2 h-2 flex items-center justify-center border rounded-sm transition duration-300 hover:scale-103"><img src={CvIcon} alt="CvIcon" className="size-1.25"/></a>
